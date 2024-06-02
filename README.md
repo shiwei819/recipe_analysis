@@ -1,15 +1,15 @@
-# H Introduction
+# Introduction
 
-# H Data Cleaning and Exploratory Data Analysis
+# Data Cleaning and Exploratory Data Analysis
 
-# H Assessment of Missingness
+# Assessment of Missingness
 
-# H Hypothesis Testing
+# Hypothesis Testing
 
-# H Framing a Prediction Problem
+# Framing a Prediction Problem
 
-# H Baseline Model
+# Baseline Model
 
-# H Final Model
+# Final Model
 
-# H Fairness Analysis
+# Fairness Analysis
