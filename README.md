@@ -35,7 +35,7 @@
 ### Second, replace rating that equals to zero with np.NaN, because a rate of zero is due to no input of rating.
 ### Third, using mean of each recipe to fill the missing ratings in the same recipe
 
-<table style="width:100%">
+<table style="width:50%">
 <thead>
 <tr>
 <th style="text-align:right"></th>
