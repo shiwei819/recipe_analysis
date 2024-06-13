@@ -24,6 +24,7 @@
 |  4 | 412 broccoli casserole               |        40 | 2008-05-30  |         6 |               9 |        5 |               5 |
 
 ## Univariate Analysis
+
 <iframe
   src="histogram_of_cooking_n_steps.html"
   width="800"
