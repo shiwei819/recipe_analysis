@@ -213,7 +213,7 @@
 
 ## Univariate Analysis
 <iframe
-  src="assets/histogram_of_cooking n_steps.html"
+  src="histogram_of_cooking n_steps.html"
   width="800"
   height="600"
   frameborder="0"
