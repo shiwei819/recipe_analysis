@@ -30,7 +30,7 @@
 ## Univariate Analysis
 
 <iframe
-  src="/htmls/histogram_of_cooking_n_steps.html"
+  src="/histogram_of_cooking_n_steps.html"
   width="800"
   height="600"
   frameborder="0"
@@ -41,7 +41,7 @@
 ## Bivariate Analysis
 
 <iframe
-  src="/htmls/n_steps vs rating.html.html"
+  src="/n_steps vs rating.html.html"
   width="800"
   height="600"
   frameborder="0"
