@@ -127,6 +127,10 @@
 ---
 
 # Framing a Prediction Problem
+### The prediction problem chosen is `Given the cooking time(8 days maximum) and number of cooking steps, what would the rating of this recipe?`
+#### Response variable is rating of the recipe. Rating means popularity of this recipe, for people who enjoys cooking, this could be an important parameter for them to try a certain recipe.
+#### Since cooking time and number of cooking steps are all numerical values, the type of prediction is a Regression.
+#### The evalutaion statistic chosen are R^2 and RMSE
 
 ---
 
