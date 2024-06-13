@@ -30,13 +30,22 @@
 ## Univariate Analysis
 
 <iframe
-  src="histogram_of_cooking_n_steps.html" width=800 height=600 frameborder=0></iframe>
+  src="assets/histogram_of_cooking_n_steps.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
 
 ### As we can see, this plot shows mainly recipes are around 8 steps, it becomse rare when steps increase to 40. This could be helpful in later cutting off outliers.
 
 ## Bivariate Analysis
 
-<iframe src="n_steps vs rating.html.html" width=800 height=600 frameborder=0></iframe>
+<iframe
+  src="assets/n_steps vs rating.html.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
 
 ### As we can see, this scatter plot shows some relationship between n_steps and rating: when the n_steps get larger, the rating tend to be higher.
 
