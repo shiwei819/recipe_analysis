@@ -90,10 +90,39 @@
 #### p_value is 0.0. 
 #### Therefore, missingness on col rating_filled has missingness dependency with col n_steps
 
-
 ---
 
 # Hypothesis Testing
+### Null_Hypothesis = "n_steps and minutes will not affect rating."
+### Alter_Hypothesis = "larger n_steps and minutes, result in higher rating."
+#### Test Statistic: R^2
+#### Reason for test statistic: regression line is closed to 0, and residual pattern looks random. Correlation factor should be near 0, looking for positive correlation to reject null.
+
+#### Significant Level: 95%
+#### Reason for 95% significant level: 95% significant level means the observed statistic is not located within 2 std around the mean, which gives a strong confidence to reject the null hypothesis.
+
+## Firstly, the code using the whole dataset to run the permutation test, and failed
+
+<iframe
+  src="assets/fail_reject_null.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+
+#### It obtains a p_value around 0.297, which is way greater than 0.05, resulting fail to reject the Null_Hypothesis
+
+### Then, try to alter the original question a little bit to `explore the relationship between rating and time consume and steps required on the recipes that take upto eight days`, since recipes that are over 8 days are more likely to be a joke, like "how to preserve a husband", which would result in a bad model training.
+## Therefore, I restrict the recipe takes time only within 8 days.
+
+<iframe
+  src="assets/success_reject_null.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+
+#### It obtains a p_value of 0, which is good and reject the Null_Hypothesis.
 
 ---
 
