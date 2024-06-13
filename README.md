@@ -149,9 +149,54 @@
 ---
 
 # Final Model
+## The two extract features added are `'n_ingredients'` and `'submitted'`
+
+| Column          | Description                     |
+| :-------------- | ------------------------------: |
+|`'n_ingredients'`| Number of ingredients in recipe |
+| `'submitted'`   | Date recipe was submitted       | 
+
+#### Adding feature `n_ingredients` is because the n_ingredients is somehow relate to n_steps. Literally, more ingredience involve would probabily result in longer cooking time and more cooking steps. So, the presence of n_ingredients could help to adjust misbehave of columns minutes and n_steps
+
+#### Adding feature `submitted` is because the submitted is somehow relate to n_steps. Along with the time passing, the average of n_steps tend to be bigger. It makes sense that, the development of recipe, generating the variability of dishes making
+
+<iframe
+  src="assets/submitted_n_steps.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+
+#### This scatter graph somehow support the reason added feature submitted, it shows the trend of time passing, the n_steps tend to get larger.
+
+## In this part, two model algorithms are selected, SGDRegressor and LinearRegression.
+### Performing GridSearchCV to search for the best combination of hyperparameter 'alpha' and 'loss' for SGDRegressor
+#### where 'alpha' gives a just right regularization of training process, 'loss' provides the suitable solution to the outlier datapoints.
+
+## In the Final_Model, comparing to the baseline_model:
+### R^2 increases 0.014, RMSE decrease 0.0047 on train dataset;
+### R^2 increases 0.009, RMSE decrease 0.0047 on test dataset.
+
+## Overall, the final_model did have improvement over baseline_model.
 
 ---
 
 # Fairness Analysis
+## Null_Hypothesis:
+### My model is fair. Its RMSE for recipes before 2009(inclusive) and recipes after 2009(exclusive) are roughly the same , and any differences are due to random chance."
+## Alter_Hypothesis:
+### My model is unfair. Its RMSE for recipes before 2009(inclusive) is less than recipes after 2009(exclusive), which means before2009_RMSE < after2009_RMSE ==> before2009_RMSE after2009_RMSE < 0
 
+### Group_X is recipes before 2009(inclusive), Group_Y is recipes after 2009(exclusive)
+### Since the Alter_Hypothesis is one-ended, Test statistic chosen is RMSE difference between before2009 and after2009
+
+<iframe
+  src="assets/differences_beforeAfter.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+
+## Conclusion: 
+### Since the Alter_Hypothesis is looking for before2009_RMSE after2009_RMSE < 0, Then we should count more negative values as our p_value. Therefore, the p_value =  1.0 , which shows we fail to reject the Null_Hypothesis. As a result, the model might be fair respect to the different submitted time.
 ---
