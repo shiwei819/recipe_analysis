@@ -2,32 +2,12 @@
 ### The datasets I chose is the "Recipes and Ratings". This project is going to explore the relationship between rating and time consumed and steps required on the recipes. People who are enjoying cooking, might want to know this question. How might time consumed and steps required affect the average rating on a recipe.
 ### There are two datasets in total, after merging them, there are 234429 rows in total. The col this project going to work on most are these four
 
-<table>
-<thead>
-<tr>
-<th>Column</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>&#39;minutes&#39;</td>
-<td>Minutes to prepare recipe</td>
-</tr>
-<tr>
-<td>&#39;n_steps&#39;</td>
-<td>Number of steps in recipe</td>
-</tr>
-<tr>
-<td>&#39;n_ingredients</td>
-<td>Number of ingredients in recipe</td>
-</tr>
-<tr>
-<td>&#39;submitted&#39;</td>
-<td>Date recipe was submitted</td>
-</tr>
-</tbody>
-</table>
+| Column | Description |
+|: ----------- | ----------- :|
+| 'minutes' | Minutes to prepare recipe |
+| 'n_steps' | Number of steps in recipe |
+| 'n_ingredients | Number of ingredients in recipe |
+| 'submitted' | Date recipe was submitted | 
 
 # Data Cleaning and Exploratory Data Analysis
 ## Data Cleaning
@@ -213,7 +193,7 @@
 
 ## Univariate Analysis
 <iframe
-  src="histogram_of_cooking n_steps.html"
+  src="assets/histogram_of_cooking n_steps.html"
   width="800"
   height="600"
   frameborder="0"
