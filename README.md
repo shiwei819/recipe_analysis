@@ -41,21 +41,13 @@
 ## Bivariate Analysis
 
 <iframe
-  src="assets/n_steps vs rating.html"
+  src="assets/n_steps_rating_scatter"
   width="800"
   height="600"
   frameborder="0"
 ></iframe>
 
-
-<!-- <iframe
-  src="assets/n_steps_rating_scatter"
-  width="800"
-  height="600"
-  frameborder="0"
-></iframe> -->
-
-### As we can see, this scatter plot shows some relationship between n_steps and rating: when the n_steps get larger, the rating tend to be higher.
+### As we can see, this scatter plot shows some relationship between n_steps and average rating: when the n_steps get larger, the rating tend to be higher.
 
 
 ## Interesting Aggregates
