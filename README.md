@@ -41,7 +41,7 @@
 ## Bivariate Analysis
 
 <iframe
-  src="assets/n_steps vs rating.html.html"
+  src="assets/n_steps vs rating.html"
   width="800"
   height="600"
   frameborder="0"
@@ -69,6 +69,27 @@
 ### Here is the pivot_table of `minuts` and `n_steps` with first 10 rows and 10 columns showing. It is somehow can see the rating decrese along the increase of n_steps, and rating increse along the increase of minutes
 
 # Assessment of Missingness
+## NMAR Analysis
+### NMAR on user_id column
+#### Even though missingness on user_id have relationship with the missingness on recipe_id and data.It does not depend on the value on recipe_id and date but the missingness. Bascially, The missingness present on these three at the same time is due to no review on the recipe.
+
+### Solution_on_this_missingness
+#### Since the reason behind is no one review the recipe, which imply the unpopular of this recipe, generally speaking, it suggests the lower averge rating on these recipe. Therefore, filling these missing value with a low rating among all possible recorded ratings is reasonable.
+
+## Missingness Dependency
+### In anayzing missingness on rating_filled column, n_steps column is chosen for checking missingness dependency. 
+### Although the distribution of n_steps when rating_filled is missing and the distribution of n_steps when rating_filled is not missing looks similar. The permutation test revealed they are dependent.
+
+<iframe
+  src="assets/permutation_tvds_on_n_steps.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+
+#### p_value is 0.0. 
+#### Therefore, missingness on col rating_filled has missingness dependency with col n_steps
+
 
 ---
 
