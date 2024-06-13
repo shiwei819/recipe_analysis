@@ -3,12 +3,12 @@
 ### There are two datasets in total, after merging them, there are 234429 rows in total. The col this project going to work on most are these four
 
 
-| Column         | Description                     |
-|: ------------- | -------------------------------:|
-| 'minutes'      | Minutes to prepare recipe       |
-| 'n_steps'      | Number of steps in recipe       |
-| 'n_ingredients | Number of ingredients in recipe |
-| 'submitted'    | Date recipe was submitted       | 
+| Column          | Description                     |
+| :-------------- | ------------------------------: |
+| `'minutes'`     | Minutes to prepare recipe       |
+| `'n_steps'`     | Number of steps in recipe       |
+|`'n_ingredients'`| Number of ingredients in recipe |
+| `'submitted'`   | Date recipe was submitted       | 
 
 ---
 
