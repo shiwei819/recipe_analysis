@@ -135,7 +135,17 @@
 ---
 
 # Baseline Model
+### In the baseline model, following the prediction problem, literally it takes two features and then fit into a Linear Regression model:
 
+| Column          | Description                     | Type          |
+| :-------------- | ------------------------------: | ------------: | 
+| `'minutes'`     | Minutes to prepare recipe       | quantitative  |
+| `'n_steps'`     | Number of steps in recipe       | quantitative  |
+
+### The performance of the model might not quite ideal.
+### R^2 for training data is 0.00017, RMSE for training data is 0.499.
+### R^2 for testing data is 0.00005, RMSE for testing data is 0.497.
+### And I think current model is not good due to the underfitting model, this model is too basic, and my next steps is make it more complicated.
 ---
 
 # Final Model
